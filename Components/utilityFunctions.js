@@ -16,7 +16,7 @@ let conversionToken = 0
 export const conversion = async (data) => {
     if (conversionToken === 0 ){
         conversionToken ++
-    fetch('../datas/BTC.txt')
+    fetch('../BTC.txt')
     .then(r => r.text())
     .then(text => {
       let bufferText = JSON.parse(text)
