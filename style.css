@@ -1,0 +1,107 @@
+body{
+    user-select: none;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(#0f8152d2 0%, #1a6244d8 80%);
+}
+main{
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    
+}
+section{
+    display: flex;
+    width: 95vw;
+    justify-content:space-between;
+    align-items:center;
+    background-color: #353839;
+    border-radius: 30px;
+    border: 1px solid black ;
+    padding: 20px 2vw 20px 2vw ;
+    color :ivory ;
+}
+h1{
+    margin : 0;
+}
+h2{
+    margin :0;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+}
+.graph{
+    border-radius: 10px;
+    border: 1px solid black;
+    background : #040544;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    height: 100%;
+    width:100%;
+}
+.left-section{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+.schema{
+    display: flex;
+}
+.circuit{
+    filter: invert(1)
+}
+.dynamic{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items:center;
+    width : 100px ; 
+}
+/*knob*/
+.controls-knobs{
+display: flex;
+flex-direction: column;
+justify-content:space-around;
+}
+.knob{
+    margin : 5px;
+    transform: rotate(00deg) ;
+    position: relative;
+    border-radius:50%;
+    height:45px;
+    width:45px;
+    box-shadow: inset 0 0 0 1px #c9c9c9, inset 0  1px 2px rgba(#fff, .5), 
+    inset 0 -1px 2px rgba(#000, .5);
+    background: 
+      conic-gradient(
+          #d7d7d7, #c3c3c3, #cccccc, #c6c6c6, 
+          #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8, 
+          #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf, 
+          #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5, 
+          #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd, 
+          #c4c4c4, #d9d9d9, #cecece, #c5c5c5, 
+          #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9, 
+          #d7d7d7) content-box, 
+      linear-gradient(#d4d4d4, #d4d4d4) 
+   
+}
+.knob-point{
+    border-radius: 50%;
+    height:5px;
+    width: 5px;
+    background :#DA2C43;
+    border : 0.5px solid #941526;
+    position: absolute;
+    left: 20px;
+    top : 6px;
+}
